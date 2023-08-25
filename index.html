@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenda de Veículos GL</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/carro-moderno-em-fundo-transparente-renderizacao-em-3d-ilustracao_494250-31500.avif"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>CALCULAR PAGAMENTO DE VEÍCULO</h1>
+    </header>
+    <section class="container">
+      <div class="box-container">
+        <h1>Revenda de Veículos GL</h1>
+        <form>
+          <p>
+            <label for="inVeiculo">Veículo : </label>
+            <input
+              class="inVeiculo"
+              type="text"
+              name="veiculo"
+              id="inVeiculo"
+            />
+          </p>
+          <p>
+            <label for="inPreco">Preço R$:</label>
+            <input type="number" name="preco" id="inPreco" />
+          </p>
+          <p class="select">
+            <label for="inMeses">Escolha quantidades de meses:</label><br />
+            <select name="meses" id="inMeses">
+              <option value="0">Escolha aqui</option>
+              <option value="12">12 meses</option>
+              <option value="24">24 meses</option>
+              <option value="36">36 meses</option>
+              <option value="48">48 meses</option>
+              <option value="60">60 meses</option>
+            </select>
+          </p>
+          <div class="container-btn">
+            <button type="button" id="btn">Calcular forma de pagamento</button>
+          </div>
+        </form>
+        <div id="result">
+          <h3 id="veiculo"></h3>
+          <h3 id="entrada"></h3>
+          <h4 id="parcelas"></h4>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; Produção Gilmar Gomes de Lima</p>
+    </footer>
+    <script src="./assets/scrips/script.js"></script>
+  </body>
+</html>

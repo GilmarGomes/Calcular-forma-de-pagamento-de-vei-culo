@@ -14,7 +14,7 @@ btnElement.addEventListener("click", () => {
     return;
   }
 
-  const valorEntrada = valor - 0.3 * valor;
+  const valorEntrada = valor - 0.7 * valor;
   const parcelas = (valor - valorEntrada) / inMeses;
 
   modeloVeiculo.textContent = `Promoção: ${veiculo}`;
